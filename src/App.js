@@ -1,18 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Calendar from "./components/Calendar";
+import "./App.css";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+        <header>
+          <div id="logo">
+            <span className="icon">date_range</span>
+            <span>
+              calendar<b>challenge</b>
+            </span>
+          </div>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload this.
-        </p>
+        <main>
+          <Calendar />
+        </main>
       </div>
     );
   }
