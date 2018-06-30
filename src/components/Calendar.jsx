@@ -4,7 +4,7 @@ import dateFns from "date-fns";
 class Calendar extends React.Component {
   state = {
     currentMonth: new Date(),
-    selectedDate: new Date()
+    selectedDate: new Date(),
   };
 
   renderHeader() {
@@ -85,7 +85,7 @@ class Calendar extends React.Component {
       );
       days = [];
     }
-    return <div className="body">{rows}</div>;
+    return <div className="body">{rows}          <button>Meow</button></div>;
   }
 
   onDateClick = day => {
