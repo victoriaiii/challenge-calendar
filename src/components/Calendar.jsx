@@ -85,7 +85,7 @@ class Calendar extends React.Component {
       );
       days = [];
     }
-    return <div className="body">{rows}          <button>Meow</button></div>;
+    return <div className="body">{rows}</div>;
   }
 
   onDateClick = day => {

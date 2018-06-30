@@ -1,7 +1,5 @@
 import React from "react";
 import Calendar from "./components/Calendar";
-import EventButton from "./components/EventButton";
-// import EventButton from ".components/EventButton";
 import "./App.css";
 
 class App extends React.Component {
@@ -18,7 +16,6 @@ class App extends React.Component {
         </header>
         <main>
           <Calendar />
-          <EventButton />
         </main>
       </div>
     );
